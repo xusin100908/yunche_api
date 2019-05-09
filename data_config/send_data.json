@@ -1,0 +1,107 @@
+{
+    "login": {
+        "username": "admin@yunche.com",
+        "password": "111111"
+    },
+    "employeeAdd": {
+        "name": "东方阳",
+        "idCard": "664633199302047832",
+        "mobile": "18527360541",
+        "email": "680788@163.com",
+        "dingDing": "",
+        "departmentId": 1,
+        "parentId": "",
+        "title": "1",
+        "entryDate": "",
+        "userGroupIdList": [],
+        "bizAreaIds": [],
+        "status": 0,
+        "type": 1
+    },
+    "employeeUpdate": {
+        "id": 1494,
+        "name": "测试006442",
+        "idCard": "430621199002033521",
+        "mobile": "13226252515",
+        "email": "17649@qq.com",
+        "dingDing": "",
+        "departmentId": 1,
+        "parentId": "",
+        "title": "1",
+        "entryDate": "",
+        "bizAreaIds": [],
+        "status": 0,
+        "type": 1
+    },
+    "employeeDetails": {
+        "id": 1494
+    },
+    "employeeDelete": {
+        "id": 1494,
+        "status": "2"
+    },
+    "creditapplyCreate": {
+        "loanBaseInfo": {
+            "id": "",
+            "areaId": "110100000000",
+            "salesmanId": 224,
+            "loanAmount": "1",
+            "bank": "中国工商银行南京江宁支行",
+            "partnerId": 28
+        },
+        "principalLender": {
+            "id": null,
+            "name": "徐准",
+            "nation": "汉",
+            "idCard": "330329197508120365",
+            "mobile": "18522220000",
+            "marry": "2",
+            "birth": 176688000000,
+            "sex": "1",
+            "identityAddress": "浙江省泰顺县彭溪镇彭溪村内洋74号",
+            "identityValidity": "2010.01.07-2030.01.07",
+            "issuingDepartment": "泰顺县公安局",
+            "status": 0,
+            "custType": 1,
+            "files": [
+                {
+                    "type": 2,
+                    "urls": [
+                        "img/2019/201905/20190506/A2ccm4xDDS.jpg"
+                    ]
+                },
+                {
+                    "type": 3,
+                    "urls": [
+                        "img/2019/201905/20190506/Q5wFQ7asfm.jpg"
+                    ]
+                },
+                {
+                    "type": 4,
+                    "urls": [
+                        "img/2019/201905/20190506/28rWNEyXGN.jpg"
+                    ]
+                },
+                {
+                    "type": 5,
+                    "urls": [
+                        "img/2019/201905/20190506/xX8f3fw56P.jpg"
+                    ]
+                }
+            ]
+        },
+        "specialContactList": []
+    },
+    "queryNewTaskList": {
+        "pageSize": 20,
+        "pageIndex": 1,
+        "taskDefinitionKey": "usertask_credit_apply",
+        "taskStatus": 2,
+        "orderId": "1904291151436057995"
+    },
+    "doLogin": {
+        "account": "360209841",
+        "LoginAgent": "WEB",
+        "password": "PmvCwEsdjEnxMefa7ZG11AV00/wKPweMm4vV4xLDOLbACkd+2VZBslz8U4L5y6iGtY0IFUXDj6UWbTndkuZ93BmqZHFAWSt4blAm3nIRJD/YNrxthSeJ2CK/rqOMhp77eVe6f0rioOND8cO3vr+6pknvG1AtkPEJo7UTlfOoQog="
+    }
+}

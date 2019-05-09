@@ -1,0 +1,756 @@
+2019-05-09 14:51:23,011 - INFO: testcase :登录业务系统-API
+2019-05-09 14:51:23,011 - INFO: Method/Url post/http://www.yunchejinrong.com:8090/api/v1/employee/login
+2019-05-09 14:51:23,011 - INFO: RequestData:{
+    "username": "admin@yunche.com",
+    "password": "111111"
+}
+2019-05-09 14:51:23,011 - INFO: Response Data:{
+    "data": {
+        "id": 1,
+        "name": "admin",
+        "password": null,
+        "idCard": "333333222222222222",
+        "mobile": "15757871316",
+        "email": "admin@yunche.com",
+        "dingDing": "admin",
+        "departmentId": 17,
+        "parentId": 215,
+        "title": "laoban",
+        "entryDate": null,
+        "type": 1,
+        "level": 1,
+        "gmtCreate": 1523421085000,
+        "gmtModify": 1557373037000,
+        "status": 0,
+        "feature": null,
+        "machineId": null,
+        "bankId": -1,
+        "notify": 0,
+        "bizAreaIds": [],
+        "userId": 1,
+        "username": "admin",
+        "userGroupSet": [
+            "业务内勤",
+            "上门催收组",
+            "电话催收组",
+            "风控经理",
+            "电审经理",
+            "催保主管",
+            "电审专员",
+            "电催主管",
+            "客服",
+            "催收主管",
+            "保险组",
+            "总经理",
+            "管理员",
+            "培训经理",
+            "渠道经理",
+            "客服经理",
+            "总监",
+            "电审主管",
+            "财务经理",
+            "法务组",
+            "接收",
+            "寄出",
+            "银行驻点",
+            "清算组",
+            "configure_center"
+        ],
+        "isAdmin": true
+    },
+    "success": true,
+    "code": "EC00000200",
+    "msg": "登录成功"
+}
+2019-05-09 14:51:23,094 - INFO: testcase :新增员工工号-API
+2019-05-09 14:51:23,094 - INFO: Method/Url post/http://www.yunchejinrong.com:8090/api/v1/employee/create
+2019-05-09 14:51:23,094 - INFO: RequestData:{
+    "name": "张贤",
+    "idCard": "563259199302063185",
+    "mobile": "13495742180",
+    "email": "939566@199.com",
+    "dingDing": "",
+    "departmentId": 1,
+    "parentId": "",
+    "title": "1",
+    "entryDate": "",
+    "userGroupIdList": [],
+    "bizAreaIds": [],
+    "status": 0,
+    "type": 1
+}
+2019-05-09 14:51:23,094 - INFO: Response Data:{
+    "data": 1492,
+    "success": true,
+    "code": "EC00000200",
+    "msg": "创建成功"
+}
+2019-05-09 14:51:23,138 - INFO: testcase :查询员工工号-API
+2019-05-09 14:51:23,138 - INFO: Method/Url get/http://www.yunchejinrong.com:8090/api/v1/employee/getById
+2019-05-09 14:51:23,138 - INFO: RequestData:{
+    "id": 1492
+}
+2019-05-09 14:51:23,138 - INFO: Response Data:{
+    "data": {
+        "id": 1492,
+        "name": "张贤",
+        "idCard": "563259199302063185",
+        "mobile": "13495742180",
+        "email": "939566@199.com",
+        "dingDing": "",
+        "title": "1",
+        "entryDate": null,
+        "gmtCreate": 1557384682000,
+        "gmtModify": 1557384682000,
+        "status": 0,
+        "type": 1,
+        "selected": null,
+        "department": [
+            {
+                "id": 17,
+                "name": "云车金融",
+                "parentId": null
+            },
+            {
+                "id": 1,
+                "name": "总经办",
+                "parentId": 17
+            }
+        ],
+        "parent": null,
+        "parentName": null,
+        "partnerId": null,
+        "partnerName": null,
+        "bankId": null,
+        "notify": 0,
+        "bizAreaIdList": []
+    },
+    "success": true,
+    "code": "EC00000200",
+    "msg": "success"
+}
+2019-05-09 14:51:23,431 - INFO: testcase :编辑员工工号-API
+2019-05-09 14:51:23,431 - INFO: Method/Url post/http://www.yunchejinrong.com:8090/api/v1/employee/update
+2019-05-09 14:51:23,431 - INFO: RequestData:{
+    "id": 1492,
+    "name": "测试006442",
+    "idCard": "430621199002033521",
+    "mobile": "13226252515",
+    "email": "17649@qq.com",
+    "dingDing": "",
+    "departmentId": 1,
+    "parentId": "",
+    "title": "1",
+    "entryDate": "",
+    "bizAreaIds": [],
+    "status": 0,
+    "type": 1
+}
+2019-05-09 14:51:23,431 - INFO: Response Data:{
+    "data": null,
+    "success": true,
+    "code": "EC00000200",
+    "msg": "编辑成功"
+}
+2019-05-09 14:51:23,726 - INFO: testcase :删除员工工号-API
+2019-05-09 14:51:23,726 - INFO: Method/Url post/http://www.yunchejinrong.com:8090/api/v1/employee/update
+2019-05-09 14:51:23,727 - INFO: RequestData:{
+    "id": 1492,
+    "status": "2"
+}
+2019-05-09 14:51:23,727 - INFO: Response Data:{
+    "data": null,
+    "success": true,
+    "code": "EC00000200",
+    "msg": "编辑成功"
+}
+2019-05-09 14:51:23,833 - INFO: testcase :登录业务系统-API
+2019-05-09 14:51:23,833 - INFO: Method/Url post/http://47.98.165.144/api/v1/employee/login
+2019-05-09 14:51:23,833 - INFO: RequestData:{
+    "username": "admin@yunche.com",
+    "password": "111111"
+}
+2019-05-09 14:51:23,833 - INFO: Response Data:{
+    "data": null,
+    "success": false,
+    "code": "EC00000500",
+    "msg": "用户名或密码错误"
+}
+2019-05-09 14:51:23,855 - INFO: testcase :客户信息列表-API
+2019-05-09 14:51:23,855 - INFO: Method/Url post/http://47.98.165.144/api/v1/taskscheduling/queryNewTaskList
+2019-05-09 14:51:23,855 - INFO: RequestData:{
+    "pageSize": 20,
+    "pageIndex": 1,
+    "taskDefinitionKey": "usertask_credit_apply",
+    "taskStatus": 2,
+    "orderId": "1904291151436057995"
+}
+2019-05-09 14:51:23,855 - INFO: Response Data:{
+    "code": "NOT_LOGIN",
+    "msg": "操作会话已失效，请重新登录！",
+    "success": false
+}
+2019-05-09 14:51:24,107 - INFO: testcase :e分期登录-API
+2019-05-09 14:51:24,107 - INFO: Method/Url post/http://14.17.122.160:19081/login/doLogin
+2019-05-09 14:51:24,107 - INFO: RequestData:{
+    "account": "360209841",
+    "LoginAgent": "WEB",
+    "password": "PmvCwEsdjEnxMefa7ZG11AV00/wKPweMm4vV4xLDOLbACkd+2VZBslz8U4L5y6iGtY0IFUXDj6UWbTndkuZ93BmqZHFAWSt4blAm3nIRJD/YNrxthSeJ2CK/rqOMhp77eVe6f0rioOND8cO3vr+6pknvG1AtkPEJo7UTlfOoQog="
+}
+2019-05-09 14:51:24,107 - INFO: Response Data:{
+    "code": 0,
+    "data": {
+        "loginInfo": {
+            "account": "360209841",
+            "brno": "0019",
+            "dept": {
+                "areaCode": "3602",
+                "areaId": 420104,
+                "bankCode": "0180400023",
+                "cityId": 420100,
+                "code": "001002001001001",
+                "createTime": 1528524173000,
+                "deptLevel": 5,
+                "deptNum": "gdgh",
+                "depth": 4,
+                "dotCode": "0019",
+                "id": 20099950,
+                "name": "襄阳胜利街支行",
+                "orgId": 2120040,
+                "orgType": 2,
+                "parentId": 20099940,
+                "provinceId": 420000,
+                "remark": "襄阳胜利街支行",
+                "removed": 0,
+                "sort": 1,
+                "updateTime": 1547689454000,
+                "updateUser": 35120
+            },
+            "deptCode": "001002001001001",
+            "deptId": 20099950,
+            "id": 41960,
+            "loginAgent": "WEB",
+            "name": "360209841",
+            "orgId": 2120040,
+            "organization": {
+                "code": "0180400000",
+                "id": 2120040,
+                "level": 3,
+                "name": "中国工商银行股份有限公司襄阳分行"
+            },
+            "phone1": "18027258407",
+            "role": {
+                "createTime": 1529472628000,
+                "createUser": 35120,
+                "id": 11440,
+                "internal": 0,
+                "isdel": 0,
+                "level": 10,
+                "name": "全流程权限",
+                "orgId": 2120040,
+                "orgType": 2,
+                "roleLoginType": 0,
+                "sort": 19,
+                "updateTime": 1557135675000,
+                "updateUser": 35120
+            },
+            "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIzNjAyMDk4NDEiLCJqdGkiOiLpppnqnaXjtq7jhbXigLrhm7foq5Tvv5_shIjFvCIsImlzcyI6ImhyZmF4LmNhcmxvYW4uand0In0.Dy4Utlt85Py7vfC4b_EJeK5GSMq_Zcy2Qv_AW1EoxSFSO1UlzwSsa5SOFsFg49w4WQv82aRODEaXG2hkU4Yuug",
+            "zoneno": "3602"
+        },
+        "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIzNjAyMDk4NDEiLCJqdGkiOiLpppnqnaXjtq7jhbXigLrhm7foq5Tvv5_shIjFvCIsImlzcyI6ImhyZmF4LmNhcmxvYW4uand0In0.Dy4Utlt85Py7vfC4b_EJeK5GSMq_Zcy2Qv_AW1EoxSFSO1UlzwSsa5SOFsFg49w4WQv82aRODEaXG2hkU4Yuug"
+    },
+    "msg": "success"
+}
+2019-05-09 14:58:04,330 - INFO: testcase :登录业务系统-API
+2019-05-09 14:58:04,330 - INFO: Method/Url post/http://www.yunchejinrong.com:8090/api/v1/employee/login
+2019-05-09 14:58:04,330 - INFO: RequestData:{
+    "username": "admin@yunche.com",
+    "password": "111111"
+}
+2019-05-09 14:58:04,330 - INFO: Response Data:{
+    "data": {
+        "id": 1,
+        "name": "admin",
+        "password": null,
+        "idCard": "333333222222222222",
+        "mobile": "15757871316",
+        "email": "admin@yunche.com",
+        "dingDing": "admin",
+        "departmentId": 17,
+        "parentId": 215,
+        "title": "laoban",
+        "entryDate": null,
+        "type": 1,
+        "level": 1,
+        "gmtCreate": 1523421085000,
+        "gmtModify": 1557373037000,
+        "status": 0,
+        "feature": null,
+        "machineId": null,
+        "bankId": -1,
+        "notify": 0,
+        "bizAreaIds": [],
+        "userId": 1,
+        "username": "admin",
+        "userGroupSet": [
+            "业务内勤",
+            "上门催收组",
+            "电话催收组",
+            "风控经理",
+            "电审经理",
+            "催保主管",
+            "电审专员",
+            "电催主管",
+            "客服",
+            "催收主管",
+            "保险组",
+            "总经理",
+            "管理员",
+            "培训经理",
+            "渠道经理",
+            "客服经理",
+            "总监",
+            "电审主管",
+            "财务经理",
+            "法务组",
+            "接收",
+            "寄出",
+            "银行驻点",
+            "清算组",
+            "configure_center"
+        ],
+        "isAdmin": true
+    },
+    "success": true,
+    "code": "EC00000200",
+    "msg": "登录成功"
+}
+2019-05-09 14:58:04,418 - INFO: testcase :新增员工工号-API
+2019-05-09 14:58:04,418 - INFO: Method/Url post/http://www.yunchejinrong.com:8090/api/v1/employee/create
+2019-05-09 14:58:04,418 - INFO: RequestData:{
+    "name": "西门智",
+    "idCard": "798591199302091894",
+    "mobile": "18530651429",
+    "email": "685456@199.com",
+    "dingDing": "",
+    "departmentId": 1,
+    "parentId": "",
+    "title": "1",
+    "entryDate": "",
+    "userGroupIdList": [],
+    "bizAreaIds": [],
+    "status": 0,
+    "type": 1
+}
+2019-05-09 14:58:04,418 - INFO: Response Data:{
+    "data": 1493,
+    "success": true,
+    "code": "EC00000200",
+    "msg": "创建成功"
+}
+2019-05-09 14:58:04,450 - INFO: testcase :查询员工工号-API
+2019-05-09 14:58:04,450 - INFO: Method/Url get/http://www.yunchejinrong.com:8090/api/v1/employee/getById
+2019-05-09 14:58:04,450 - INFO: RequestData:{
+    "id": ""
+}
+2019-05-09 14:58:04,450 - INFO: Response Data:{
+    "data": null,
+    "success": false,
+    "code": "EC00000500",
+    "msg": "id不能为空"
+}
+2019-05-09 14:58:04,497 - INFO: testcase :编辑员工工号-API
+2019-05-09 14:58:04,497 - INFO: Method/Url post/http://www.yunchejinrong.com:8090/api/v1/employee/update
+2019-05-09 14:58:04,497 - INFO: RequestData:{
+    "id": "",
+    "name": "测试006442",
+    "idCard": "430621199002033521",
+    "mobile": "13226252515",
+    "email": "17649@qq.com",
+    "dingDing": "",
+    "departmentId": 1,
+    "parentId": "",
+    "title": "1",
+    "entryDate": "",
+    "bizAreaIds": [],
+    "status": 0,
+    "type": 1
+}
+2019-05-09 14:58:04,497 - INFO: Response Data:{
+    "data": null,
+    "success": false,
+    "code": "EC00000500",
+    "msg": "id不能为空"
+}
+2019-05-09 14:58:04,528 - INFO: testcase :删除员工工号-API
+2019-05-09 14:58:04,529 - INFO: Method/Url post/http://www.yunchejinrong.com:8090/api/v1/employee/update
+2019-05-09 14:58:04,529 - INFO: RequestData:{
+    "id": "",
+    "status": "2"
+}
+2019-05-09 14:58:04,529 - INFO: Response Data:{
+    "data": null,
+    "success": false,
+    "code": "EC00000500",
+    "msg": "id不能为空"
+}
+2019-05-09 14:58:04,635 - INFO: testcase :登录业务系统-API
+2019-05-09 14:58:04,635 - INFO: Method/Url post/http://47.98.165.144/api/v1/employee/login
+2019-05-09 14:58:04,635 - INFO: RequestData:{
+    "username": "admin@yunche.com",
+    "password": "111111"
+}
+2019-05-09 14:58:04,635 - INFO: Response Data:{
+    "data": null,
+    "success": false,
+    "code": "EC00000500",
+    "msg": "用户名或密码错误"
+}
+2019-05-09 14:58:04,659 - INFO: testcase :客户信息列表-API
+2019-05-09 14:58:04,659 - INFO: Method/Url post/http://47.98.165.144/api/v1/taskscheduling/queryNewTaskList
+2019-05-09 14:58:04,659 - INFO: RequestData:{
+    "pageSize": 20,
+    "pageIndex": 1,
+    "taskDefinitionKey": "usertask_credit_apply",
+    "taskStatus": 2,
+    "orderId": "1904291151436057995"
+}
+2019-05-09 14:58:04,659 - INFO: Response Data:{
+    "code": "NOT_LOGIN",
+    "msg": "操作会话已失效，请重新登录！",
+    "success": false
+}
+2019-05-09 14:58:04,915 - INFO: testcase :e分期登录-API
+2019-05-09 14:58:04,915 - INFO: Method/Url post/http://14.17.122.160:19081/login/doLogin
+2019-05-09 14:58:04,915 - INFO: RequestData:{
+    "account": "360209841",
+    "LoginAgent": "WEB",
+    "password": "PmvCwEsdjEnxMefa7ZG11AV00/wKPweMm4vV4xLDOLbACkd+2VZBslz8U4L5y6iGtY0IFUXDj6UWbTndkuZ93BmqZHFAWSt4blAm3nIRJD/YNrxthSeJ2CK/rqOMhp77eVe6f0rioOND8cO3vr+6pknvG1AtkPEJo7UTlfOoQog="
+}
+2019-05-09 14:58:04,915 - INFO: Response Data:{
+    "code": 0,
+    "data": {
+        "loginInfo": {
+            "account": "360209841",
+            "brno": "0019",
+            "dept": {
+                "areaCode": "3602",
+                "areaId": 420104,
+                "bankCode": "0180400023",
+                "cityId": 420100,
+                "code": "001002001001001",
+                "createTime": 1528524173000,
+                "deptLevel": 5,
+                "deptNum": "gdgh",
+                "depth": 4,
+                "dotCode": "0019",
+                "id": 20099950,
+                "name": "襄阳胜利街支行",
+                "orgId": 2120040,
+                "orgType": 2,
+                "parentId": 20099940,
+                "provinceId": 420000,
+                "remark": "襄阳胜利街支行",
+                "removed": 0,
+                "sort": 1,
+                "updateTime": 1547689454000,
+                "updateUser": 35120
+            },
+            "deptCode": "001002001001001",
+            "deptId": 20099950,
+            "id": 41960,
+            "loginAgent": "WEB",
+            "name": "360209841",
+            "orgId": 2120040,
+            "organization": {
+                "code": "0180400000",
+                "id": 2120040,
+                "level": 3,
+                "name": "中国工商银行股份有限公司襄阳分行"
+            },
+            "phone1": "18027258407",
+            "role": {
+                "createTime": 1529472628000,
+                "createUser": 35120,
+                "id": 11440,
+                "internal": 0,
+                "isdel": 0,
+                "level": 10,
+                "name": "全流程权限",
+                "orgId": 2120040,
+                "orgType": 2,
+                "roleLoginType": 0,
+                "sort": 19,
+                "updateTime": 1557135675000,
+                "updateUser": 35120
+            },
+            "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIzNjAyMDk4NDEiLCJqdGkiOiLhrK3ogYzmo7vou77hopzrsI_shZLtgrXqpo3vp54iLCJpc3MiOiJocmZheC5jYXJsb2FuLmp3dCJ9.zU5Ft_HWJ9cLjwH2O66cVWMlYfFof2jYRHLhh8g4ITzFPvisUAvLI0LI0WolRdyA2OnhVhzd47YDZa8zlQCUDw",
+            "zoneno": "3602"
+        },
+        "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIzNjAyMDk4NDEiLCJqdGkiOiLhrK3ogYzmo7vou77hopzrsI_shZLtgrXqpo3vp54iLCJpc3MiOiJocmZheC5jYXJsb2FuLmp3dCJ9.zU5Ft_HWJ9cLjwH2O66cVWMlYfFof2jYRHLhh8g4ITzFPvisUAvLI0LI0WolRdyA2OnhVhzd47YDZa8zlQCUDw"
+    },
+    "msg": "success"
+}
+2019-05-09 15:04:25,701 - INFO: testcase :登录业务系统-API
+2019-05-09 15:04:25,701 - INFO: Method/Url post/http://www.yunchejinrong.com:8090/api/v1/employee/login
+2019-05-09 15:04:25,702 - INFO: RequestData:{
+    "username": "admin@yunche.com",
+    "password": "111111"
+}
+2019-05-09 15:04:25,702 - INFO: Response Data:{
+    "data": {
+        "id": 1,
+        "name": "admin",
+        "password": null,
+        "idCard": "333333222222222222",
+        "mobile": "15757871316",
+        "email": "admin@yunche.com",
+        "dingDing": "admin",
+        "departmentId": 17,
+        "parentId": 215,
+        "title": "laoban",
+        "entryDate": null,
+        "type": 1,
+        "level": 1,
+        "gmtCreate": 1523421085000,
+        "gmtModify": 1557373037000,
+        "status": 0,
+        "feature": null,
+        "machineId": null,
+        "bankId": -1,
+        "notify": 0,
+        "bizAreaIds": [],
+        "userId": 1,
+        "username": "admin",
+        "userGroupSet": [
+            "业务内勤",
+            "上门催收组",
+            "电话催收组",
+            "风控经理",
+            "电审经理",
+            "催保主管",
+            "电审专员",
+            "电催主管",
+            "客服",
+            "催收主管",
+            "保险组",
+            "总经理",
+            "管理员",
+            "培训经理",
+            "渠道经理",
+            "客服经理",
+            "总监",
+            "电审主管",
+            "财务经理",
+            "法务组",
+            "接收",
+            "寄出",
+            "银行驻点",
+            "清算组",
+            "configure_center"
+        ],
+        "isAdmin": true
+    },
+    "success": true,
+    "code": "EC00000200",
+    "msg": "登录成功"
+}
+2019-05-09 15:04:25,782 - INFO: testcase :新增员工工号-API
+2019-05-09 15:04:25,782 - INFO: Method/Url post/http://www.yunchejinrong.com:8090/api/v1/employee/create
+2019-05-09 15:04:25,783 - INFO: RequestData:{
+    "name": "东方阳",
+    "idCard": "664633199302047832",
+    "mobile": "18527360541",
+    "email": "680788@163.com",
+    "dingDing": "",
+    "departmentId": 1,
+    "parentId": "",
+    "title": "1",
+    "entryDate": "",
+    "userGroupIdList": [],
+    "bizAreaIds": [],
+    "status": 0,
+    "type": 1
+}
+2019-05-09 15:04:25,783 - INFO: Response Data:{
+    "data": 1494,
+    "success": true,
+    "code": "EC00000200",
+    "msg": "创建成功"
+}
+2019-05-09 15:04:25,830 - INFO: testcase :查询员工工号-API
+2019-05-09 15:04:25,831 - INFO: Method/Url get/http://www.yunchejinrong.com:8090/api/v1/employee/getById
+2019-05-09 15:04:25,831 - INFO: RequestData:{
+    "id": 1494
+}
+2019-05-09 15:04:25,831 - INFO: Response Data:{
+    "data": {
+        "id": 1494,
+        "name": "东方阳",
+        "idCard": "664633199302047832",
+        "mobile": "18527360541",
+        "email": "680788@163.com",
+        "dingDing": "",
+        "title": "1",
+        "entryDate": null,
+        "gmtCreate": 1557385465000,
+        "gmtModify": 1557385465000,
+        "status": 0,
+        "type": 1,
+        "selected": null,
+        "department": [
+            {
+                "id": 17,
+                "name": "云车金融",
+                "parentId": null
+            },
+            {
+                "id": 1,
+                "name": "总经办",
+                "parentId": 17
+            }
+        ],
+        "parent": null,
+        "parentName": null,
+        "partnerId": null,
+        "partnerName": null,
+        "bankId": null,
+        "notify": 0,
+        "bizAreaIdList": []
+    },
+    "success": true,
+    "code": "EC00000200",
+    "msg": "success"
+}
+2019-05-09 15:04:25,899 - INFO: testcase :编辑员工工号-API
+2019-05-09 15:04:25,900 - INFO: Method/Url post/http://www.yunchejinrong.com:8090/api/v1/employee/update
+2019-05-09 15:04:25,900 - INFO: RequestData:{
+    "id": 1494,
+    "name": "测试006442",
+    "idCard": "430621199002033521",
+    "mobile": "13226252515",
+    "email": "17649@qq.com",
+    "dingDing": "",
+    "departmentId": 1,
+    "parentId": "",
+    "title": "1",
+    "entryDate": "",
+    "bizAreaIds": [],
+    "status": 0,
+    "type": 1
+}
+2019-05-09 15:04:25,900 - INFO: Response Data:{
+    "data": null,
+    "success": true,
+    "code": "EC00000200",
+    "msg": "编辑成功"
+}
+2019-05-09 15:04:25,972 - INFO: testcase :删除员工工号-API
+2019-05-09 15:04:25,972 - INFO: Method/Url post/http://www.yunchejinrong.com:8090/api/v1/employee/update
+2019-05-09 15:04:25,972 - INFO: RequestData:{
+    "id": 1494,
+    "status": "2"
+}
+2019-05-09 15:04:25,972 - INFO: Response Data:{
+    "data": null,
+    "success": true,
+    "code": "EC00000200",
+    "msg": "编辑成功"
+}
+2019-05-09 15:04:26,080 - INFO: testcase :登录业务系统-API
+2019-05-09 15:04:26,080 - INFO: Method/Url post/http://47.98.165.144/api/v1/employee/login
+2019-05-09 15:04:26,080 - INFO: RequestData:{
+    "username": "admin@yunche.com",
+    "password": "111111"
+}
+2019-05-09 15:04:26,080 - INFO: Response Data:{
+    "data": null,
+    "success": false,
+    "code": "EC00000500",
+    "msg": "用户名或密码错误"
+}
+2019-05-09 15:04:26,101 - INFO: testcase :客户信息列表-API
+2019-05-09 15:04:26,102 - INFO: Method/Url post/http://47.98.165.144/api/v1/taskscheduling/queryNewTaskList
+2019-05-09 15:04:26,102 - INFO: RequestData:{
+    "pageSize": 20,
+    "pageIndex": 1,
+    "taskDefinitionKey": "usertask_credit_apply",
+    "taskStatus": 2,
+    "orderId": "1904291151436057995"
+}
+2019-05-09 15:04:26,102 - INFO: Response Data:{
+    "code": "NOT_LOGIN",
+    "msg": "操作会话已失效，请重新登录！",
+    "success": false
+}
+2019-05-09 15:04:26,359 - INFO: testcase :e分期登录-API
+2019-05-09 15:04:26,359 - INFO: Method/Url post/http://14.17.122.160:19081/login/doLogin
+2019-05-09 15:04:26,359 - INFO: RequestData:{
+    "account": "360209841",
+    "LoginAgent": "WEB",
+    "password": "PmvCwEsdjEnxMefa7ZG11AV00/wKPweMm4vV4xLDOLbACkd+2VZBslz8U4L5y6iGtY0IFUXDj6UWbTndkuZ93BmqZHFAWSt4blAm3nIRJD/YNrxthSeJ2CK/rqOMhp77eVe6f0rioOND8cO3vr+6pknvG1AtkPEJo7UTlfOoQog="
+}
+2019-05-09 15:04:26,359 - INFO: Response Data:{
+    "code": 0,
+    "data": {
+        "loginInfo": {
+            "account": "360209841",
+            "brno": "0019",
+            "dept": {
+                "areaCode": "3602",
+                "areaId": 420104,
+                "bankCode": "0180400023",
+                "cityId": 420100,
+                "code": "001002001001001",
+                "createTime": 1528524173000,
+                "deptLevel": 5,
+                "deptNum": "gdgh",
+                "depth": 4,
+                "dotCode": "0019",
+                "id": 20099950,
+                "name": "襄阳胜利街支行",
+                "orgId": 2120040,
+                "orgType": 2,
+                "parentId": 20099940,
+                "provinceId": 420000,
+                "remark": "襄阳胜利街支行",
+                "removed": 0,
+                "sort": 1,
+                "updateTime": 1547689454000,
+                "updateUser": 35120
+            },
+            "deptCode": "001002001001001",
+            "deptId": 20099950,
+            "id": 41960,
+            "loginAgent": "WEB",
+            "name": "360209841",
+            "orgId": 2120040,
+            "organization": {
+                "code": "0180400000",
+                "id": 2120040,
+                "level": 3,
+                "name": "中国工商银行股份有限公司襄阳分行"
+            },
+            "phone1": "18027258407",
+            "role": {
+                "createTime": 1529472628000,
+                "createUser": 35120,
+                "id": 11440,
+                "internal": 0,
+                "isdel": 0,
+                "level": 10,
+                "name": "全流程权限",
+                "orgId": 2120040,
+                "orgType": 2,
+                "roleLoginType": 0,
+                "sort": 19,
+                "updateTime": 1557135675000,
+                "updateUser": 35120
+            },
+            "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIzNjAyMDk4NDEiLCJqdGkiOiLvooLvqpbnvIfnv4Toi5vivofhibrrooTqlbnsuZgiLCJpc3MiOiJocmZheC5jYXJsb2FuLmp3dCJ9.QShpSZvlELPMKsbTzL5yvtPUVqCjJKZ7OqTD5alXyGhyGkYTXY77_xRpVDU8DriO1rWlQJF0_PP4igrbC1Kqhg",
+            "zoneno": "3602"
+        },
+        "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIzNjAyMDk4NDEiLCJqdGkiOiLvooLvqpbnvIfnv4Toi5vivofhibrrooTqlbnsuZgiLCJpc3MiOiJocmZheC5jYXJsb2FuLmp3dCJ9.QShpSZvlELPMKsbTzL5yvtPUVqCjJKZ7OqTD5alXyGhyGkYTXY77_xRpVDU8DriO1rWlQJF0_PP4igrbC1Kqhg"
+    },
+    "msg": "success"
+}
